@@ -3,114 +3,409 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Simon Kimwele | Portfolio</title>
+  <title>Simon Kimwele | Software Developer & IT Professional</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" type="image/jpeg" href="assets/me (2).jpeg">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 
-  <header>
-    <h1>Simon Mumo Kimwele</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">Simon kimwele</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p><strong>Name:</strong> Simon Mumo Kimwele</p>
-    <p>
-      I am an ambitious and detail-oriented Information Technology enthusiast based in Nairobi, Kenya.
-      With a strong foundation in IT systems, software development, and digital transformation, I aspire to grow into a strategic role as an Information Technology Manager.
-      I am passionate about solving real-world problems using technology, improving system efficiency, and leading digital innovations in organizations.
-    </p>
-    <p>
-      I am currently building my technical portfolio and expanding my skills in web development, system administration, and IT governance.
-      I believe in continuous learning and collaborative teamwork to achieve tech-driven goals.
-    </p>
-    <p>
-      <strong>GitHub:</strong> <a href="https://github.com/Simon17-git" target="_blank">github.com/Simon17-git</a>
-    </p>
-    <p><strong>Location:</strong> Nairobi, Kenya</p>
-  </section>
-
-  <section id="skills">
-    <h2>Programming Languages & Technologies</h2>
-    <ul>
-      <li><strong>HTML:</strong> Structure and semantic layout of web content</li>
-      <li><strong>CSS:</strong> Styling and responsive design</li>
-      <li><strong>JavaScript:</strong> Interactivity and dynamic front-end behavior</li>
-      <li><strong>Python:</strong> General-purpose programming and scripting</li>
-      <li><strong>Flask:</strong> Lightweight Python web framework for building web applications</li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Educational Background</h2>
-    <ul>
-      <li><strong>Bachelor of Science in Information Technology</strong><br>
-          Masinde Muliro University of Science and Technology<br>
-          School of Computing and Informatics<br>
-          Year: 3 (Expected Graduation: 2026)
-      </li>
-      <li><strong>KCSE:</strong> Kyuso Boys Secondary School – Grade: B− (2018 – 2022)</li>
-      <li><strong>KCPE:</strong> Kathoka Primary School – Score: 325 marks (2009 – 2017)</li>
-    </ul>
-    <p>
-      <a href="assets/Simon_Kimwele_CV.pdf" download class="download-btn">📄 Download My CV</a>
-    </p>
-  </section>
-
-  <section id="interests">
-    <h2>Interests</h2>
-    <ul>
-      <li>🏐 Playing and watching volleyball to stay active and collaborative</li>
-      <li>📝 Reading and writing poems as a form of creative expression</li>
-      <li>👨‍💻 Participating in hackathons and coding competitions to sharpen problem-solving skills</li>
-      <li>🎓 Exploring online tech courses to expand my technical expertise</li>
-      <li>📖 Reading tech blogs and staying up to date with IT industry trends</li>
-      <li>💡 Learning through certifications in data analytics, cybersecurity, IoT, and programming</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Safe Alert System</h3>
-      <p>
-        A campus emergency response mobile app designed to instantly alert relevant authorities and nearby users during emergencies.
-        It features location tracking, real-time notifications, and a user-friendly interface focused on safety and responsiveness.
-      </p>
-      <p><strong>Technologies Used:</strong> Android Studio, Java, Flutter, Firebase</p>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="greeting">Hello, I'm</span>
+          <span class="name">Simon Mumo Kimwele</span>
+        </h1>
+        <p class="hero-subtitle">Software Developer & IT Professional</p>
+        <p class="hero-description">
+          Passionate about solving real-world problems through technology and innovation. 
+          Currently pursuing Information Technology with a focus on web development and system administration.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="assets/Simon_Kimwele_CV.pdf" download class="btn btn-secondary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/Simon17-git" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#contact" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-card">
+          <div class="profile-avatar">
+            <img src="assets/me (2).jpeg" alt="Simon Kimwele" class="profile-img">
+          </div>
+          <div class="profile-info">
+            <h3>Simon Kimwele</h3>
+            <p>Nairobi, Kenya</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>If you'd like to reach out for collaboration, project opportunities, or just to say hi — feel free to leave a message below:</p>
-    <form>
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
-
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
-
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
-
-      <button type="submit">Send Message</button>
-    </form>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am an ambitious and detail-oriented Information Technology enthusiast based in Nairobi, Kenya.
+            With a strong foundation in IT systems, software development, and digital transformation, 
+            I aspire to grow into a strategic role as an Information Technology Manager.
+          </p>
+          <p>
+            I am passionate about solving real-world problems using technology, improving system efficiency, 
+            and leading digital innovations in organizations. Currently building my technical portfolio and 
+            expanding my skills in web development, system administration, and IT governance.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Years of Study</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-interests">
+          <h3>Interests & Hobbies</h3>
+          <div class="interests-grid">
+            <div class="interest-item">
+              <i class="fas fa-volleyball-ball"></i>
+              <span>Volleyball</span>
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-pen-fancy"></i>
+              <span>Poetry</span>
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-code"></i>
+              <span>Hackathons</span>
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Online Courses</span>
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-blog"></i>
+              <span>Tech Blogs</span>
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-certificate"></i>
+              <span>Certifications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Simon Mumo Kimwele. All rights reserved.</p>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Structure and semantic layout of web content</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-level="85"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Styling and responsive design</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-level="80"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interactivity and dynamic front-end behavior</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-level="75"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>General-purpose programming and scripting</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-level="70"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3>Flask</h3>
+          <p>Lightweight Python web framework</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-level="65"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-android"></i>
+          </div>
+          <h3>Android Development</h3>
+          <p>Mobile app development with Java & Flutter</p>
+          <div class="skill-level">
+            <div class="skill-bar" data-level="60"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/main-screen.jpeg" alt="Safe Alert System" class="project-img">
+          </div>
+          <div class="project-content">
+            <h3>Safe Alert System</h3>
+            <p>
+              A campus emergency response mobile app designed to instantly alert relevant authorities 
+              and nearby users during emergencies. Features location tracking, real-time notifications, 
+              and a user-friendly interface focused on safety and responsiveness.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Android Studio</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/portfolio.png" alt="Personal Portfolio" class="project-img">
+          </div>
+          <div class="project-content">
+            <h3>Personal Portfolio</h3>
+            <p>
+              A modern, responsive portfolio website showcasing my skills, projects, and professional journey. 
+              Built with clean HTML, CSS, and JavaScript with focus on user experience and accessibility.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2 class="section-title">Education & Background</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p class="timeline-institution">Masinde Muliro University of Science and Technology</p>
+            <p class="timeline-details">School of Computing and Informatics</p>
+            <p class="timeline-period">2022 - 2026 (Expected Graduation)</p>
+            <p class="timeline-description">
+              Currently in my third year, focusing on software development, system administration, 
+              and IT governance. Actively participating in coding competitions and hackathons.
+            </p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>KCSE - Grade B−</h3>
+            <p class="timeline-institution">Kyuso Boys Secondary School</p>
+            <p class="timeline-period">2018 - 2022</p>
+            <p class="timeline-description">
+              Completed secondary education with a strong foundation in mathematics and sciences, 
+              which provided the groundwork for my IT studies.
+            </p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>KCPE - 325 marks</h3>
+            <p class="timeline-institution">Kathoka Primary School</p>
+            <p class="timeline-period">2009 - 2017</p>
+            <p class="timeline-description">
+              Established strong academic foundations and developed problem-solving skills 
+              that continue to serve me in my technical pursuits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's Connect!</h3>
+          <p>
+            I'm always open to discussing new opportunities, interesting projects, 
+            or just having a chat about technology and innovation.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Nairobi, Kenya</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/Simon17-git" target="_blank">github.com/Simon17-git</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>simonkimwele17@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Simon Mumo Kimwele</h3>
+          <p>Software Developer & IT Professional</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/Simon17-git" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#contact">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Simon Mumo Kimwele. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
